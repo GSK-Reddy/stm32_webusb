@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>STM32 WebUSB</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Orbitron"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <h1>STM32 WebUSB</h1>
+        <input class="button" type="button" id="connectButton" value="Connect" />
+        <input class="button" type="button" id="disconnectButton" value="Disconnect" />
+
+        <hr/>
+        <br/>
+
+        <div id="connected">
+            <input id="Text_Entry" type="text"/>
+            <br/><br/>
+            <input class="button" type="button" id="Send_Button" value="Send Text" />
+            <br/><hr/>
+
+            Recived_Data: <span id="Recived_Data"></span>
+        </div>
+
+        <script src="app.js" type="module"></script>
+    </body>
+</html>
